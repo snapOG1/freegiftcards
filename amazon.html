@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Amazon Code Generator | Get Amazon for Free</title>
+  <meta name="description" content="Get free Amazon gift cards and shop millions of products on Amazon. Use our Amazon gift card generator to save on groceries, electronics, fashion apparel, and more.">
+  <meta name="keywords" content="free Amazon gift cards, Amazon gift card generator, Amazon gift card codes, Amazon rewards, Amazon promo codes">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <style>
+    @font-face {
+      font-family: 'Blanka';
+      src: url('./fonts/blanka-free-font-er/Blanka Font/Blanka-Regular.otf') format('woff2'); /* Older Browsers */
+      font-weight: normal;
+      font-style: normal;
+    }
+    .blanka-font {
+      font-family: 'Blanka', sans-serif; /* Use Blanka font or fallback to sans-serif */
+    }
+    .heading{
+      text-shadow:0 0 10px rgba(255, 255, 255, 0.697);
+    }
+    #pricedcards img:hover{
+      transition: 0.5s;
+      transform: scale(1.05);
+      box-shadow: 0px 0px 8px rgb(213, 213, 213);
+      cursor:pointer;
+    }
+    @keyframes load {
+      0% { width: 0; }
+      10% { width: 10; }
+      20% { width: 20; }
+      30% { width: 30; }
+      40% { width: 40; }
+      60% { width: 60; }
+      100% { width: 100%; }
+    }
+  </style>
+</head>
+<body id="body" data-source="amazonpage" class="lg:overflow-hidden">
+  <h1 id="heading" class="heading text-3xl md:text-4xl lg:text-3xl font-semibold text-center py-8 bg-gray-900 text-white p-4 mt-0 blanka-font z-10">Get Free Gift Cards!</h1>
+  
+  <div id="pricedcards" class="bg-gray-800 min-h-screen grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-4 py-10 lg:px-64 md:px-10 px-20 flex-wrap animate__animated">
+      <img id="amazon50" data-custom-value="amazon50" src="./img/amazon/2.png" alt="amazon $50 Gift Card" class="rounded-lg shadow-lg animate__animated animate__slideInRight">
+      <img id="amazon100" data-custom-value="amazon100" src="./img/amazon/3.png" alt="amazon $100 Gift Card" class="rounded-lg shadow-lg animate__animated animate__slideInRight">
+      <img id="amazon250" data-custom-value="amazon250" src="./img/amazon/4.png" alt="amazon $250 Gift Card" class="rounded-lg shadow-lg animate__animated animate__slideInRight">
+  </div>
+
+  <!-- generating code div -->
+  <div id="codegeneration" class="bg-gray-800 h-screen flex flex-col hidden pt-40 md:pt-32 items-center text-center">
+    <div id="codegenelements" class=" flex flex-col justify-center items-center text-center animate__animated animate__infinite">
+      <p class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl pb-10 md:pb-20 text-white md:w-full md:px-30" id="price"></p>
+      <img class="w-20 md:w-24 lg:w-32 xl:w-40 hover:scale-105 animate-spin slower" src="./img/webImg/gear-animation.png" alt="Loading Gear">
+    </div>
+
+    <div id="progressbar" class="bg-gray-800 progress h-5 md:h-5 lg:h-5 xl:h-5 lg:w-96 md:w-96 w-60 my-10 max-w-screen-lg rounded-full overflow-hidden relative">
+      <div class="progress-outline absolute inset-0 border-2 border-white rounded-full"></div>
+      <div class="progress-value bg-white h-full" style="animation: load 3s normal forwards;"></div>
+    </div>
+
+    <div>
+      <p id="generatedcode" class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl mb-6 text-white mt-10 bg-gray-500 px-10 py-1 rounded-full"></p>
+    </div>
+
+    <button id="verifybutton" data-custom-value="amazonverify" onclick="oglocker()" class="bg-white text-black py-2 px-10 border rounded-lg pt-1">Verify</button>
+  </div>
+
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</body>
+<script src="./js/loadingallcards.js"></script>
+</html>
