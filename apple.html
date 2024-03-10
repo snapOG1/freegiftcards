@@ -43,18 +43,21 @@
       60% { width: 60; }
       100% { width: 100%; }
     }
+    body{
+      background: url('./img/appleBg.png') center/cover;
+    }
   </style>
 </head>
 <body id="body" data-source="applepage" class="">
-  <h1 id="heading" class="heading text-3xl md:text-4xl lg:text-3xl font-semibold text-center py-8 bg-gray-900 text-white p-4 mt-0 blanka-font z-10">Get Free Gift Cards!</h1>
-  <div id="pricedcards" class="min-h-screen grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-4 py-10 lg:px-64 md:px-10 px-20 bg-gray-800 flex-wrap animate__animated">
+  <h1 id="heading" class="heading text-3xl md:text-4xl lg:text-3xl font-semibold text-center py-8 bg-gray-900 opacity-90 text-white p-4 mt-0 blanka-font z-10">Get Free Gift Cards!</h1>
+  <div id="pricedcards" class="min-h-screen grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-4 py-10 lg:px-64 md:px-10 px-20 flex-wrap animate__animated">
       <img id="apple50" data-custom-value="apple50" src="./img/apple/2.png" alt="apple $50 Gift Card" class="rounded-lg shadow-lg animate__animated animate__slideInRight">
       <img id="apple100" data-custom-value="apple100" src="./img/apple/3.png" alt="apple $100 Gift Card" class="rounded-lg shadow-lg animate__animated animate__slideInRight">
       <img id="apple250" data-custom-value="apple250" src="./img/apple/4.png" alt="apple $250 Gift Card" class="rounded-lg shadow-lg animate__animated animate__slideInRight">
   </div>
 
   <!-- generating code div -->
-  <div id="codegeneration" class="h-screen flex flex-col hidden pt-40 md:pt-32 items-center text-center bg-gray-800">
+  <div id="codegeneration" class="bg-gray-800 opacity-80 h-screen flex flex-col hidden pt-40 md:pt-32 items-center text-center">
     <div id="codegenelements" class=" flex flex-col justify-center items-center text-center animate__animated animate__infinite">
       <p class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl pb-10 md:pb-20 text-white md:w-full md:px-30" id="price"></p>
       <img class="w-20 md:w-24 lg:w-32 xl:w-40 hover:scale-105 animate-spin slower" src="./img/webImg/gear-animation.png" alt="Loading Gear">
